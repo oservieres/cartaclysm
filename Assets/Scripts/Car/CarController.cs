@@ -151,7 +151,6 @@ namespace Cartaclysm.Car
 
 			//Set the steer on the front wheels.
 			//Assuming that wheels 0 and 1 are the front wheels.
-			float speedFactor = CurrentSpeed / MaxSpeed;
 			m_SteerAngle = steering * 2;
 			m_WheelColliders[0].steerAngle = m_SteerAngle;
 			m_WheelColliders[1].steerAngle = m_SteerAngle;
@@ -333,11 +332,6 @@ namespace Cartaclysm.Car
 			}
 			Destroy (createdWreck, 10.0f);
 			Destroy (this.gameObject);
-
-			CarUserControl carUser = GetComponent<CarUserControl> ();
-			if (carUser != null) {
-				EventManager.TriggerEvent ("player_die_" + carUser.playerId.ToString());
-			}
 		}
 
 		void OnCollisionEnter(Collision col) {

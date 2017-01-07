@@ -5,12 +5,12 @@ public class CameraTarget : MonoBehaviour {
 
 	private int speed = 70;
 
-	// Update is called once per frame
 	void FixedUpdate () {
 		
 		GameObject[] playersCars = GameObject.FindGameObjectsWithTag("PlayerCar");
 		int playersCarsCount = playersCars.Length;
 		Vector3 localPosition = transform.localPosition;
+
 		if (playersCarsCount == 0) {
 			localPosition.x = 0;
 		} else {

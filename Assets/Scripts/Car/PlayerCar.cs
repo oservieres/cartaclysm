@@ -21,7 +21,6 @@ public class PlayerCar : MonoBehaviour {
 	private Rigidbody carRigidbody;
 
 	private float maxTorque = 200000;
-	private float maxBrakeTorque = 100000;
 	private float maxSteer = 100000;
 
 	public float hoverForce = 100f;
@@ -150,8 +149,6 @@ public class PlayerCar : MonoBehaviour {
 
 	private void manageHoverModeDriving()
 	{
-		Ray ray = new Ray (transform.position, -transform.up);
-
 		//Hover
 		RaycastHit hit;
 		bool intersects = Physics.Raycast (

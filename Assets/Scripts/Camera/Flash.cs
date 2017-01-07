@@ -6,12 +6,10 @@ public class Flash : MonoBehaviour {
 
 	private Image imageComponent;
 
-	// Use this for initialization
 	void Start () {
 		imageComponent = GetComponent<Image> ();
 	}
-	
-	// Update is called once per frame
+
 	void FixedUpdate () {
 		Color color = imageComponent.color;
 		if (color.a > 0) {
