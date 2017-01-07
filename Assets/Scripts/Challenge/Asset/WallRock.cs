@@ -32,6 +32,7 @@ public class WallRock : MonoBehaviour {
 	void OnCollisionEnter(Collision other) {
 		if (other.gameObject.tag == "Scenery") {
 			isFalling = false;
+			Destroy (GetComponent<Rigidbody>());
 		}
 	}
 }
