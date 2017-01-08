@@ -34,20 +34,17 @@ public class PauseMenu : MonoBehaviour {
 		GameObject.Find ("PauseTitleText").GetComponent<Text> ().text = "Pause for player " + PlayerID.ToString();
 		GameObject.Find ("GameRestart").GetComponent<Button> ().Select();
 		Time.timeScale = 0.01f;
-		Time.fixedDeltaTime = 0.02f * Time.timeScale;
 	}
 
 	void DisablePause(PlayerID PlayerID) {
 		menu.SetActive (false);
 		Time.timeScale = 1;
-		Time.fixedDeltaTime = 0.02f;
 	}
 
 	public void RestartScene()
 	{
 		menu.SetActive (false);
 		Time.timeScale = 1;
-		Time.fixedDeltaTime = 0.02f;
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 	}
 
@@ -55,7 +52,6 @@ public class PauseMenu : MonoBehaviour {
 	{
 		menu.SetActive (false);
 		Time.timeScale = 1;
-		Time.fixedDeltaTime = 0.02f;
 		Application.Quit ();
 	}
 
@@ -73,7 +69,6 @@ public class PauseMenu : MonoBehaviour {
 		}
 		
 		Time.timeScale = 1;
-		Time.fixedDeltaTime = 0.02f;
 		menu.SetActive (false);
 	}
 }
