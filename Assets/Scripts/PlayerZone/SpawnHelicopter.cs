@@ -44,7 +44,7 @@ public class SpawnHelicopter : MonoBehaviour {
 		Rigidbody rigidbody = currentRespawningCar.GetComponent<Rigidbody> ();
 		rigidbody.useGravity = true;
 		rigidbody.isKinematic = false;
-		playerCar.isActive = true;
+		playerCar.Activate();
 		currentRespawningPlayer = null;
 		currentRespawnTimer = 0.0f;
 	}

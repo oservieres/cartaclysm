@@ -10,6 +10,8 @@ public class PlayerCar : MonoBehaviour {
 	public GameObject carBody;
 	public GameObject sparks;
 	public bool isAbletoThrust = true;
+	public AudioSource engineSlowSound;
+	public AudioSource skidSound;
 
 	public GameObject tireSmokeLeft;
 	public GameObject tireSmokeRight;
@@ -43,6 +45,11 @@ public class PlayerCar : MonoBehaviour {
 		initialBodyRotation = carBody.transform.localRotation;
 	}
 
+	public void Activate() {
+		isActive = true;
+		engineSlowSound.Play ();
+	}
+
 	void Update () {
 		thrustInput = InputManager.GetAxis ("Thrust", playerId);
 		if (InputManager.GetInputConfiguration (playerId).name == "KeyboardAndMouse_P1") {
@@ -68,6 +75,7 @@ public class PlayerCar : MonoBehaviour {
 			} else {
 				tireSmokeLeft.GetComponent<ParticleSystem> ().Stop ();
 				tireSmokeRight.GetComponent<ParticleSystem> ().Stop ();
+				skidSound.Stop();
 				transform.rotation = initialRotation;
 				carBody.transform.localRotation = initialBodyRotation;
 				carRigidbody.drag = 1.5f;
@@ -131,7 +139,7 @@ public class PlayerCar : MonoBehaviour {
 			carRigidbody.velocity = new Vector3(carRigidbody.velocity.x * 0.95f, carRigidbody.velocity.y, carRigidbody.velocity.z);
 		}
 
-		//Smoke
+		//Skidding: Smoke and sound
 		if (!Mathf.Approximately (steerInput, 0.0f)) {
 			smokeTimer = 0.2f;
 		}
@@ -139,10 +147,12 @@ public class PlayerCar : MonoBehaviour {
 			if (!tireSmokeLeft.GetComponent<ParticleSystem> ().isPlaying) {
 				tireSmokeLeft.GetComponent<ParticleSystem> ().Play ();
 				tireSmokeRight.GetComponent<ParticleSystem> ().Play ();
+				skidSound.Play ();
 			}
 		} else {
 			tireSmokeLeft.GetComponent<ParticleSystem> ().Stop ();
 			tireSmokeRight.GetComponent<ParticleSystem> ().Stop ();
+			skidSound.Stop();
 		}
 		smokeTimer -= Time.fixedDeltaTime;
 	}
