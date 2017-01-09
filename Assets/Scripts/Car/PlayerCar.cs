@@ -12,6 +12,7 @@ public class PlayerCar : MonoBehaviour {
 	public bool isAbletoThrust = true;
 	public AudioSource engineSlowSound;
 	public AudioSource skidSound;
+	public AudioSource hoverSound;
 
 	public GameObject tireSmokeLeft;
 	public GameObject tireSmokeRight;
@@ -72,6 +73,7 @@ public class PlayerCar : MonoBehaviour {
 					Vector3.forward * 40000,
 					ForceMode.Impulse
 				);
+				hoverSound.Stop();
 			} else {
 				tireSmokeLeft.GetComponent<ParticleSystem> ().Stop ();
 				tireSmokeRight.GetComponent<ParticleSystem> ().Stop ();
@@ -79,6 +81,7 @@ public class PlayerCar : MonoBehaviour {
 				transform.rotation = initialRotation;
 				carBody.transform.localRotation = initialBodyRotation;
 				carRigidbody.drag = 1.5f;
+				hoverSound.Play();
 			}
 		}
 	}

@@ -1,11 +1,22 @@
 # Cartaclysm
 A local multiplayer car game made with Unity. Made for fun. My first Unity Project, so don't judge me.
 
+This is a proof of concept.
+
+# Gameplay
+A mix between [Mashed](https://en.wikipedia.org/wiki/Mashed), [Split Second](https://www.youtube.com/watch?v=C1Vkc86jI80) and [Bad Boys II](https://youtu.be/bvPWI_IOxCQ?t=29s).
+I trying to reproduce the feeling of playing with toys : tiny cars, weird physics, cartoon explosions, sound effects by mouth.
+
 # Compatibility
 
-* Windows: OK
-* OSX: should be OK
-* Linux: not OK yet.
+* Windows: OK.
+* OSX: OK.
+* Linux: Not tested.
+
+# Known issues
+
+* Xbox 360 controllers were not tested on OSX
+* Pause menu is bugged. Hit ALT+F4 (Windows) or CMD+Q (OSX) to quit the game.
 
 # Community assets used
 
@@ -30,3 +41,8 @@ A local multiplayer car game made with Unity. Made for fun. My first Unity Proje
 
 * [Explosions](https://www.assetstore.unity3d.com/en/#!/content/67834) by Synty Studios
 * [Sparks](https://www.assetstore.unity3d.com/en/#!/content/52144) by Galactic Studios
+
+# Voice actors
+
+* Magali Cappagli
+* Olivier Servières
