@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BarrelTruck : MonoBehaviour {
+public class LeadingTruck : MonoBehaviour {
 
 	public Waypoint target;
 	private int speed = 30;

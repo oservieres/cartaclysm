@@ -10,8 +10,10 @@ public class PlayerCar : MonoBehaviour {
 	public GameObject carBody;
 	public GameObject sparks;
 	public bool isAbletoThrust = true;
+
 	public AudioSource engineSlowSound;
-	public AudioSource skidSound;
+	public AudioSource skidRightSound;
+	public AudioSource skidLeftSound;
 	public AudioSource hoverSound;
 
 	public GameObject tireSmokeLeft;
@@ -77,7 +79,8 @@ public class PlayerCar : MonoBehaviour {
 			} else {
 				tireSmokeLeft.GetComponent<ParticleSystem> ().Stop ();
 				tireSmokeRight.GetComponent<ParticleSystem> ().Stop ();
-				skidSound.Stop();
+				skidRightSound.Stop();
+				skidLeftSound.Stop();
 				transform.rotation = initialRotation;
 				carBody.transform.localRotation = initialBodyRotation;
 				carRigidbody.drag = 1.5f;
@@ -150,12 +153,14 @@ public class PlayerCar : MonoBehaviour {
 			if (!tireSmokeLeft.GetComponent<ParticleSystem> ().isPlaying) {
 				tireSmokeLeft.GetComponent<ParticleSystem> ().Play ();
 				tireSmokeRight.GetComponent<ParticleSystem> ().Play ();
-				skidSound.Play ();
+				skidRightSound.Play ();
+				skidLeftSound.Play ();
 			}
 		} else {
 			tireSmokeLeft.GetComponent<ParticleSystem> ().Stop ();
 			tireSmokeRight.GetComponent<ParticleSystem> ().Stop ();
-			skidSound.Stop();
+			skidRightSound.Stop();
+			skidLeftSound.Stop ();
 		}
 		smokeTimer -= Time.fixedDeltaTime;
 	}

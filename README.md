@@ -46,3 +46,4 @@ I trying to reproduce the feeling of playing with toys : tiny cars, weird physic
 
 * Magali Cappagli
 * Olivier Servières
+* Cyril Viguié

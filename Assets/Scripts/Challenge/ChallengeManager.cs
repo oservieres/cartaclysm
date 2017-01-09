@@ -28,9 +28,9 @@ namespace Cartaclysm.Challenge {
 
 		void Start () {
 			challenges = new BaseChallenge[] {
-				new MovingZone (),
+				/*new MovingZone (),
 				new PassTheGates (),
-				new WrongWay(),
+				new WrongWay(),*/
 				new LeadingTrucks()
 			};
 			challengeTimerDisplayText = challengeTimerDisplay.GetComponent<Text> ();
