@@ -10,13 +10,13 @@ I trying to reproduce the feeling of playing with toys : tiny cars, weird physic
 # Compatibility
 
 * Windows: OK.
-* OSX: OK.
+* OSX: OK. Xbox 360 controllers not tested.
 * Linux: Not tested.
 
 # Known issues
 
-* Xbox 360 controllers were not tested on OSX
 * Pause menu is bugged. Hit ALT+F4 (Windows) or CMD+Q (OSX) to quit the game.
+* Sometimes, car gets stuck in the ground
 
 # Community assets used
 
