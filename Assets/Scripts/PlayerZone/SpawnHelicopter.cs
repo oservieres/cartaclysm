@@ -80,7 +80,7 @@ public class SpawnHelicopter : MonoBehaviour {
 	}
 
 	public void InitRespawn(PlayerID playerID) {
-		if (Object.ReferenceEquals(null, currentRespawningPlayerID)) {
+		if (!Object.ReferenceEquals(null, currentRespawningPlayerID)) {
 			playersIDsToRespawn.Enqueue (playerID);
 			return;
 		}
