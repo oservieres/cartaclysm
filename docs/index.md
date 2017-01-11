@@ -18,7 +18,7 @@ Just unzip and execute :
 
 * [Download for Windows](https://github.com/oservieres/cartaclysm/releases/download/v0.0.2/cartaclysm-v0.0.2-windows.zip) (v0.0.2)
 * [Download for OSX](https://github.com/oservieres/cartaclysm/releases/download/v0.0.2/cartaclysm-v0.0.2-osx.zip) (v0.0.2)
-* Download for Linux coming soon
+* [Download for Linux](https://github.com/oservieres/cartaclysm/releases/download/v0.0.2/cartaclysm-v0.0.2-linux.zip) (v0.0.2)
 
 ## Controls
 
@@ -33,7 +33,9 @@ Just unzip and execute :
 
 # Known issues
 
-It may be hard to quit the game: the pause menu is quite bugged. Do not hesitate to use `ALT + F4` or `CMD + Q`.
+* It may be hard to quit the game: the pause menu is quite bugged. Do not hesitate to use `ALT + F4` or `CMD + Q`.
+* Xbox controller is not yet supported under Linux.
+* Xbox controller has not been tested on IOS.
 
 # What's next ?
 
