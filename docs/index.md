@@ -1,6 +1,12 @@
 # What is this ?
 
-Cartaclysm is a free and open source prototype. It is a game playable by 4 players on the same screen. The game is mainly multiplayer. You can play alone, but I think it will not be much interesting until a proper single player mode with goals and achievements is added, maybe one day.
+Cartaclysm is a free and open source prototype. It is a game playable by 4 players on the same screen.
+
+![Cartaclysm screenshot 1](v0.0.2-ingame.jpg)
+
+The game is mainly multiplayer. You can play alone, but I think it will not be much interesting until a proper single player mode with goals and achievements is added, maybe one day.
+
+![Cartaclysm screenshot 2](v0.0.2-over.jpg)
 
 # How to play ?
 
@@ -18,12 +24,6 @@ Controls:
 | Turn left         | Left arrow  | Left stick          |
 | Hover mode        | X           | X                   |
 | Join game/respawn | Space       | A                   |
-
-# What does it look like ?
-
-![Cartaclysm screenshot 1](v0.0.2-ingame.jpg)
-
-![Cartaclysm screenshot 2](v0.0.2-over.jpg)
 
 # Known issues
 
