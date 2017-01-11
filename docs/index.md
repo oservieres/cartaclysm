@@ -1,6 +1,6 @@
 # What is this ?
 
-Cartaclysm is a free and open source prototype. It is a game playable by 4 players on the same screen.
+Cartaclysm is a free and open source prototype. It is a game playable by 4 players on the same screen. It is a car-game, but not a race: the winner is not the one who finishes first, it is the one who finishes alive with the most points earned by completing challenges.
 
 ![Cartaclysm screenshot 1](v0.0.2-ingame.jpg)
 
@@ -9,6 +9,8 @@ The game is mainly multiplayer. You can play alone, but I think it will not be m
 ![Cartaclysm screenshot 2](v0.0.2-over.jpg)
 
 # How to play ?
+
+Just unzip and execute :
 
 * [Download for Windows](https://github.com/oservieres/cartaclysm/releases/download/v0.0.2/cartaclysm-v0.0.2-windows.zip) (v0.0.2)
 * [Download for OSX](https://github.com/oservieres/cartaclysm/releases/download/v0.0.2/cartaclysm-v0.0.2-osx.zip) (v0.0.2)
