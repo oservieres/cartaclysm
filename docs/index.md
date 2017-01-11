@@ -23,7 +23,7 @@ Controls:
 
 ![Cartaclysm screenshot 1](v0.0.2-ingame.jpg)
 
-![Cartaclysm screenshot 2](v0.0.2-ingame.jpg)
+![Cartaclysm screenshot 2](v0.0.2-over.jpg)
 
 # Known issues
 
