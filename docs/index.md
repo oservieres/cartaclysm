@@ -34,8 +34,8 @@ Just unzip and execute :
 # Known issues
 
 * It may be hard to quit the game: the pause menu is quite bugged. Do not hesitate to use `ALT + F4` or `CMD + Q`.
-* Xbox controller is not yet supported under Linux.
-* Xbox controller has not been tested on IOS.
+* Xbox controller is not yet supported on Linux.
+* Xbox controller has not been tested on OSX.
 
 # What's next ?
 
