@@ -1,4 +1,4 @@
-# What is this ?
+## What is this ?
 
 Cartaclysm is a free and open source prototype. It is a game playable by 4 players on the same screen. It is a car-game, but not a race: the winner is not the one who finishes first, it is the one who finishes alive with the most points earned by completing challenges.
 
@@ -12,7 +12,7 @@ You can play alone, but I think it will not be much interesting until a proper s
 
 ![Cartaclysm screenshot 2](v0.0.2-over.jpg)
 
-# How to play ?
+## How to play ?
 
 Just unzip and execute :
 
@@ -20,7 +20,7 @@ Just unzip and execute :
 * [Download for OSX](https://github.com/oservieres/cartaclysm/releases/download/v0.0.2/cartaclysm-v0.0.2-osx.zip) (v0.0.2)
 * [Download for Linux](https://github.com/oservieres/cartaclysm/releases/download/v0.0.2/cartaclysm-v0.0.2-linux.zip) (v0.0.2)
 
-## Controls
+### Controls
 
 | Action            | Keyboard    | Xbox 360 controller |
 | ----------------- | ----------- | ------------------- |
@@ -31,13 +31,13 @@ Just unzip and execute :
 | Hover mode        | X           | X                   |
 | Join game/respawn | Space       | A                   |
 
-# Known issues
+## Known issues
 
 * It may be hard to quit the game: the pause menu is quite bugged. Do not hesitate to use `ALT + F4` or `CMD + Q`.
 * Xbox controller is not yet supported on Linux.
 * Xbox controller has not been tested on OSX.
 
-# What's next ?
+## What's next ?
 
 Do not hesitate to participate under various forms:
 
